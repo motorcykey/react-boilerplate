@@ -24,7 +24,6 @@ module.exports = defineConfig([
       ...eslintJsPlugin.configs.recommended.rules,
       ...tsPlugin.configs.recommended.rules,
       "quotes": ["error", "single"],
-      "no-unused-vars": ["error"]
     },
   },
 ]);
