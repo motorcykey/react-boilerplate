@@ -2,6 +2,7 @@ const { defineConfig } = require("eslint/config");
 const tsPlugin = require("@typescript-eslint/eslint-plugin");
 const tsParser = require('@typescript-eslint/parser');
 const eslintJsPlugin = require("@eslint/js");
+const globals = require("globals");
 
 module.exports = defineConfig([
   {
@@ -13,7 +14,8 @@ module.exports = defineConfig([
         project: "./tsconfig.json"
       },
       globals: {
-        document: "readonly"
+        ...globals.browser,
+        ...globals.node
       }
     },
     plugins: {
