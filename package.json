@@ -1,7 +1,7 @@
 {
   "name": "react-app-skeleton",
   "version": "1.0.0",
-  "main": "src/index.tsx",
+  "main": "dist/index.js",
   "description": "Boilerplate code to start a React application",
   "scripts": {
     "start": "webpack serve --mode development",
